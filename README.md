@@ -10,36 +10,35 @@
 </p>
 
 <p align="center">
-<a href="LICENSE" target="_blank">
+  <a href="LICENSE" target="_blank">
     <img alt="MIT License" src="https://img.shields.io/github/license/yetone/openai-translator.svg?style=flat-square" />
-</a>
+  </a>
 
-<!-- TypeScript Badge -->
-<img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-blue?style=flat-square&logo=typescript&logoColor=white" />
+  <!-- TypeScript Badge -->
+  <img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-blue?style=flat-square&logo=typescript&logoColor=white" />
 
-<!-- Rust Badge -->
-<img alt="Rust" src="https://img.shields.io/badge/-Rust-orange?style=flat-square&logo=rust&logoColor=white" />
+  <!-- Rust Badge -->
+  <img alt="Rust" src="https://img.shields.io/badge/-Rust-orange?style=flat-square&logo=rust&logoColor=white" />
 
-<a href="https://chrome.google.com/webstore/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc" target="_blank">
-<img alt="Chrome" src="https://img.shields.io/badge/-Chrome-green?style=flat-square&logo=google-chrome&logoColor=white" />
-</a>
+  <a href="https://chrome.google.com/webstore/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc" target="_blank">
+    <img alt="Chrome" src="https://img.shields.io/chrome-web-store/stars/ogjibjphoadhljaoicdnjnmgokohngcc?color=blue&label=Chrome&style=flat-square&logo=google-chrome&logoColor=white" />
+  </a>
 
-<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
-<img alt="Firefox" src="https://img.shields.io/badge/-Firefox-orange?style=flat-square&logo=firefox&logoColor=white" />
-</a>
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/openai-translator/" target="_blank">
+    <img alt="Firefox" src="https://img.shields.io/amo/stars/openai-translator?color=orange&label=Firefox&style=flat-square&logo=firefox&logoColor=white" />
+  </a>
 
-<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
-<img alt="macOS" src="https://img.shields.io/badge/-macOS-black?style=flat-square&logo=apple&logoColor=white" />
-</a>
+  <a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+    <img alt="macOS" src="https://img.shields.io/badge/-macOS-black?style=flat-square&logo=apple&logoColor=white" />
+  </a>
 
-<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
-<img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white" />
-</a>
+  <a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+    <img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white" />
+  </a>
 
-<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
-<img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white" />
-</a>
-
+  <a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+    <img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white" />
+  </a>
 </p>
 
 # Why Yet another Translator
@@ -50,7 +49,9 @@ I have developed a [Bob](https://bobtranslate.com/) [plugin](https://github.com/
 
 What began as a Chrome extension has now evolved into a multi-platform desktop app that I am currently developing.
 
-<img width="560" src="https://user-images.githubusercontent.com/1206493/223899374-ff386436-63b8-4618-afdd-fed2e6b48d56.png" />
+<p align="center">
+  <img width="560" src="https://user-images.githubusercontent.com/1206493/223899374-ff386436-63b8-4618-afdd-fed2e6b48d56.png" />
+</p>
 
 # More than just translation
 
@@ -58,75 +59,124 @@ What began as a translation tool has now evolved to include surprisingly effecti
 
 # How to use
 
-<img width="800" src="https://user-images.githubusercontent.com/1206493/223200182-6a1d2a02-3fe0-4723-bdae-99d8b7212a33.gif" />
+<p align="center">
+  <img width="800" src="https://user-images.githubusercontent.com/1206493/223200182-6a1d2a02-3fe0-4723-bdae-99d8b7212a33.gif" />
+</p>
 
 # Features
 
-1. It offers three modes: translation, polishing, and summarization.
-2. Our tool allows for mutual translation, polishing, and summarization across 55 different languages.
+1. It offers three modes: translation, polishing and summarization.
+2. Our tool allows for mutual translation, polishing and summarization across 55 different languages.
 3. Streaming mode is supported!
 4. It allows users to customize their translation text.
 5. One-click copying
 6. Text-to-Speech (TTS)
 7. Available on all platforms (Windows, macOS, and Linux) for both browsers and Desktop
+8. Support screenshot translation
+9. Support for vocabulary books, as well as support for generating memory aids based on the words in the vocabulary books
+10. Supports both [OpenAI](https://openai.com/) and [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service) at the same time
 
-# Installation(Desktop App)
+# Preparation
 
-1. Download zip package per OS from [Release](https://github.com/yetone/openai-translator/releases)
+-   (required) Apply for an OpenAI API key [here](https://platform.openai.com/account/api-keys) or [Azure OpenAI Service API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/chatgpt-quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint)
+-   (optional) If you cannot access OpenAI, you can use the OpenAI API Proxy.
 
-2. Install the App!
+# Installation
 
--   Windows
+## Windows
 
-    Double click `OpenAI Translator-*.msi` will do the job!
+### Install Manually
 
--   macOS
+1. Download the installation package ending in `.exe` from the [Latest Release](https://github.com/yetone/openai-translator/releases/latest) page.
+2. Double click the downloaded file to install it.
+3. If prompted as unsafe, you can click on `More Info` -> `Run Anyway` to proceed with the installation.
+4. Ready to use!
 
-    Drag the `OpenAI Translator` to `Applications`
-    
-3. Open the App!
+## MacOS
 
-    When you first open it in macOS, you may encounter this problem:
-    
+### Install Manually
+
+1. Go to the [Latest Release](https://github.com/yetone/openai-translator/releases/latest) page and download the corresponding chip's `.dmg` installation package. Note: Use aarch64 version for Apple Silicon machines and run `xattr` command below.
+2. Double click the downloaded file to install it.
+3. Ready to use!
+
+### Troubleshooting
+
+-   "OpenAI Translator" can’t be opened because the developer cannot be verified.
+ 
+    <p align="center">
       <img width="300" src="https://user-images.githubusercontent.com/1206493/223916804-45ce3f34-6a4a-4baf-a0c1-4ab5c54c521f.png" />
+    </p>
+ 
+    -   Click the `Cancel` button, then go to the `Settings` -> `Privacy and Security` page, click the `Still Open` button, and then click the `Open` button in the pop-up window. After that, there will be no more pop-up warnings when opening `OpenAI Translator`. 🎉
+        <p align="center">
+          <img width="500" src="https://user-images.githubusercontent.com/1206493/223916970-9c99f15e-cf61-4770-b92d-4a78f980bb26.png" /> <img width="200" src="https://user-images.githubusercontent.com/1206493/223917449-ed1ac19f-c43d-4b13-9888-79ba46ceb862.png" />
+        </p>
+ 
+    -   If you cannot find the above options in `Privacy & Security`, or get error prompts such as broken files with Apple Silicon machines. Open `Terminal.app` and enter the following command (you may need to enter a password halfway through), then restart `OpenAI Translator`:
 
-    Click `Cancel` and then go to `Settings` -> `Privacy & Security` and click `Open Anyway` and finally click `Open`, and that's it!
+        ```sh
+        sudo xattr -d com.apple.quarantine /Applications/OpenAI\ Translator.app
+        ```
 
-      <img width="500" src="https://user-images.githubusercontent.com/1206493/223916970-9c99f15e-cf61-4770-b92d-4a78f980bb26.png" />
+-   If you encounter a permission prompt every time you open it, or if you cannot perform a shortcut translation, please go to `Settings` -> `Privacy & Security` -> `Supporting Features` to remove OpenAI Translator, and then re-add OpenAI Translator.
 
-      <img width="200" src="https://user-images.githubusercontent.com/1206493/223917449-ed1ac19f-c43d-4b13-9888-79ba46ceb862.png" />
-    
-    If you encounter permission prompts every time you open it, or cannot perform shortcut key word translation, please go to the permission settings page to delete OpenAI Translator and then re-add OpenAI Translator.
-    
+    <p align="center">
       <img width="500" src="https://user-images.githubusercontent.com/1206493/224536148-eec559bf-4d99-48c1-bbd3-2cc105aff084.png" />
-      
       <img width="600" src="https://user-images.githubusercontent.com/1206493/224536277-4200f58e-8dc0-4c01-a27a-a30d7d8dc69e.gif" />
+    </p>
 
-# Installation(Browser Extension)
+## Installing Desktop Clip Extensions
 
-1. Go to the [Chrome Web Store](https://chrome.google.com/webstore/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc) and install this extension.
+For details, see [Desktop Clip Extension](./CLIP-EXTENSIONS.md)
 
-2. Get your [OpenAI](https://platform.openai.com/account/api-keys) API Keys
+  <p align="center">
+    <img width="600" src="https://user-images.githubusercontent.com/1206493/240355949-8f41d98d-f097-4ce4-a533-af60e1757ca1.gif" />
+  </p>
+ 
+## Browser Extension
 
-<img width="600" src="https://user-images.githubusercontent.com/1206493/223043946-0e7486ca-94d7-4324-a4f2-f62b9a3d527d.png" />
+1. Visit your Browser Extension Store to install this plugin:
 
-3. Click on the OpenAI Translator icon in the browser extension list, and fill in the API Key in the pop-up window that appears.
+   <p align="center">
+     <a target="_blank" href="https://chrome.google.com/webstore/detail/openai-translator/ogjibjphoadhljaoicdnjnmgokohngcc">
+       <img src="https://img.shields.io/chrome-web-store/v/ogjibjphoadhljaoicdnjnmgokohngcc?label=Chrome%20Web%20Store&style=for-the-badge&color=blue&logo=google-chrome&logoColor=white" />
+     </a>
+     <a target="_blank" href="https://addons.mozilla.org/en-US/firefox/addon/openai-translator/">
+       <img src="https://img.shields.io/amo/v/openai-translator?label=Firefox%20Add-on&style=for-the-badge&color=orange&logo=firefox&logoColor=white" />
+     </a>
+   </p>
 
-<img width="600" src="https://user-images.githubusercontent.com/1206493/222958165-159719b4-28a5-44a4-b700-567786df7f03.png" />
+2. Click on the OpenAI Translator icon in the browser plugin list, and enter the obtained API KEY into the configuration interface that pops up from this plugin.
+ 
+   <p align="center">
+     <img width="600" src="https://user-images.githubusercontent.com/1206493/222958165-159719b4-28a5-44a4-b700-567786df7f03.png" />
+   </p>
 
-4. Refresh the page in the browser to enjoy the smooth translation experience 🎉!
+3. Refresh the page in the browser to enjoy the smooth translation experience 🎉!
+
+## Configure Azure OpenAI Service
+
+```ts
+const API_URL = `https://${resourceName}.openai.azure.com`
+const API_URL_PATH = `/openai/deployments/${deployName}/chat/completions?api-version=${apiVersion}`
+```
+
+- resourceName: Your Azure OpenAI Service resource name.
+- deployName: Your Azure OpenAI Service model deploy name, you can change your model here.
+- api-version: 2023-05-15, or newer. (supported api-version can be found at [Azure's official doc](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#completions))
 
 # License
 
 [LICENSE](./LICENSE)
 
-# Buy me a coffee
-
-<div align="center">
-<img height="360" src="https://user-images.githubusercontent.com/1206493/220753437-90e4039c-d95f-4b6a-9a08-b3d6de13211f.png" />
-<img height="360" src="https://user-images.githubusercontent.com/1206493/220756036-d9ac4512-0375-4a32-8c2e-8697021058a2.png" />
-</div>
-
 # Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yetone/openai-translator&type=Date)](https://star-history.com/#yetone/openai-translator&Date)
+<p align="center">
+  <a target="_blank" href="https://star-history.com/#yetone/openai-translator&Date">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=yetone/openai-translator&type=Date&theme=dark">
+      <img alt="NebulaGraph Data Intelligence Suite(ngdi)" src="https://api.star-history.com/svg?repos=yetone/openai-translator&type=Date">
+    </picture>
+  </a>
+</p>
